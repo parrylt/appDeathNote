@@ -4,9 +4,12 @@ import RotasTab from "./pages/rotasTab";
 
 export default function App (){
   return (
+
       <NavigationContainer>
         <RotasTab/>
       </NavigationContainer>
 
   );
+
+
 }

@@ -11,7 +11,7 @@ export default function RotasTab() {
   return (
     <Tab.Navigator
       initialRouteName= "Homepage"
-      screenOptions={{ headerShown: false }}>
+      screenOptions={{ headerShown: false ,  tabBarStyle: { position: 'fixed', zIndex: -1 }, }}>
       <Tab.Screen
         name="Matar Gente"
         component={CadGente}

@@ -1,14 +1,19 @@
-import { initializeApp } from "firebase/app";
+import Firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZKx5ktLWIQn-In_KCaYyWs0TjO7RjvhY",
-  authDomain: "seriesbd-5f108.firebaseapp.com",
-  projectId: "seriesbd-5f108",
-  storageBucket: "seriesbd-5f108.appspot.com",
-  messagingSenderId: "646230852120",
-  appId: "1:646230852120:web:31ca02138ef3ae7b1bf96d"
+  apiKey: "AIzaSyAbCspt3HsP6PyR5jIegG2S5Y_fzYAYVoM",
+  authDomain: "diariobd-ae542.firebaseapp.com",
+  projectId: "diariobd-ae542",
+  storageBucket: "diariobd-ae542.appspot.com",
+  messagingSenderId: "859882068766",
+  appId: "1:859882068766:web:4cb61cd0d81479f2abc70f"
 };
+if(!Firebase.apps.length){
 
-const app = initializeApp(firebaseConfig);
+  Firebase.initializeApp(firebaseConfig);
 
-////usar o firebase do seriesbd
+}
+
+const bdstore = Firebase.firestore()
+
+export default bdstore;
